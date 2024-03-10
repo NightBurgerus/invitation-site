@@ -1,0 +1,19 @@
+@import "./colors.css";
+body {
+    background-color: var(--green-background-color);
+}
+
+:root {
+    --width: 931px;
+}
+
+.calendar {
+    width: var(--width);
+    background-color: var(--white-background-color);
+}
+
+.calendar td {
+    border: 1px solid red;
+    text-align: center;
+    justify-content: space-between;
+}
