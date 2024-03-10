@@ -1,0 +1,15 @@
+body {
+    --green-background-color: rgba(93, 118, 83, 1);
+    --white-background-color: rgba(255, 255, 255, 1);
+
+    --main-text-color: rgba(0, 0, 0, 1);
+    --gray-text-color: rgba(121, 121, 121, 1);
+    --white-text-color: rgba(255, 255, 255, 1);
+
+    --dress-code-1: rgba(225, 215, 213, 1);
+    --dress-code-2: rgba(200, 193, 177, 1);
+    --dress-code-3: rgba(152, 146, 122, 1);
+    --dress-code-4: rgba(77, 81, 48, 1);
+    --dress-code-5: rgba(137, 93, 56, 1);
+    --dress-code-6: rgba(189, 118, 118, 1);
+}
