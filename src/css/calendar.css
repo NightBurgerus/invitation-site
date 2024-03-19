@@ -1,19 +1,62 @@
 @import "./colors.css";
 body {
-    background-color: var(--green-background-color);
+    /* background-color: var(--green-background-color); */
 }
 
 :root {
-    --width: 931px;
+    --width: calc(100vw * 0.48);
+}
+
+.calendar * {
+    margin: 0;
+    padding: 0;
 }
 
 .calendar {
+    margin-left: auto;
+    margin-right: auto;
     width: var(--width);
     background-color: var(--white-background-color);
+    font-family: "GillSansLightC";
+    font-size: calc(60 / 1920 * 100vw);
+    font-weight: 300;
+    letter-spacing: 0%;
+}
+
+.calendar .days{
+    border: 1px solid blue;
+}
+
+.calendar .month-name {
+    text-align: center;
+    font-size: calc(90 / 1920 * 100vw);
+    border: 1px solid green;
 }
 
 .calendar td {
-    border: 1px solid red;
     text-align: center;
     justify-content: space-between;
+    width: calc(var(--width) / 7 * 1.1425);
+    height: calc(var(--width) / 7);
 }
+
+.calendar iframe {
+    width: calc(var(--width) / 7 * 1.1425);
+    height: calc(var(--width) / 7);
+    border: 0px solid green;
+}
+
+.div-heart-icon {
+    position: relative;
+}
+.div-heart-icon * {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.div-heart-icon div {
+    z-index: 2;
+}
+

@@ -1,0 +1,48 @@
+@import "./colors.css";
+
+.timer-container {
+    text-align: center;
+    font-family: "GillSansLightC";
+    font-weight: 300;
+    font-size: calc(90 / 1920 * 100vw);
+    background-color: var(--green-background-color);
+    color: var(--white-text-color);
+}
+
+.timer-container p {
+    text-transform: lowercase;
+}
+
+.timer-container p:first-child {
+    text-transform: uppercase;
+}
+
+.timer {
+    margin-top: calc((40 + 70) / 1920 * 100vw);
+    margin-left: calc(355 / 1920 * 100vw);
+    margin-right: calc(368 / 1920 * 100vw);
+}
+
+.timer * {
+    display: inline-block;
+    text-align: center;
+}
+
+.timer-numbers {
+    width: 25%;
+}
+
+.timer-numbers * {
+    display: block;
+    
+}
+
+/* Числа */
+.timer-numbers p:first-child {
+    font-size: calc(100 / 1920 * 100vw);
+}
+
+/* Дней часов минут секунд */
+.timer-numbers p:nth-child(2) {
+    font-size: calc(40 / 1920 * 100vw);
+}

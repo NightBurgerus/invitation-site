@@ -1,9 +1,14 @@
 import React from "react";
-import Calendar from "./components/calendar";
+import Home from "./components/home";
+import Timer from "./components/timer"
 
 class App extends React.Component {
     render() {
-        return (<Calendar />)
+        return (
+        <div>
+            {/* <Home /> */}
+            <Timer />
+        </div>)
     }
 }
 

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.home {
+    border: 1px solid blue;
+    position: relative;
+    
+}
+.home .flowers-img {
+    width: 100vw;
+    position: absolute;
+    width: 50vw;
+    transform-origin: right top;
+    transform: rotate(-90deg); 
+    left: -50vw;
+    height: 100vw;
+    top: -20vw;
+}
+
+/* -------------------------- */
+.home .content-container div.welcome {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "GillSansLightC";
+    border: 1px solid red;
+}
+
+/* Союз И */
+.home .content-container div.and {
+    margin-top: -7vw;
+    margin-left: calc(1000 / 1920 * 100vw);
+    font-size: calc(160 / 1920 * 100vw);
+    letter-spacing: 0;
+}
+
+/* Имена */
+.home .content-container div.name {
+    font-family: "Caravan";
+    font-size: calc((290) / 1920 * 100vw);
+    font-weight: 400;
+    letter-spacing: 0%;
+    transform: rotate(-11.00deg);
+}
+
+/* Алексей */
+.home .content-container .welcome.name:first-child {
+    margin-top: 15vw;
+    margin-left: calc(490 / 1920 * 100vw);
+}
+
+
+/* Варвара */
+.home .content-container .welcome:nth-child(3) {
+    margin-right: calc(532.82 / 1920 * 100vw);
+    margin-top: -6vw;
+}
+
+/* Дорогие гости! */
+.home .content-container .welcome:nth-child(4) {
+    margin-top: calc(123 / 1920 * 100vw);
+    font-size: calc(150 / 1920 * 100vw);
+    font-weight: 300;
+    letter-spacing: 0%;
+}
+
+/* С большой радостью ... */
+.home .content-container .welcome:nth-child(5) {
+    margin-top: calc(75 / 1920 * 100vw);
+    font-weight: 300;
+    font-size: calc(75 / 1920 * 100vw);
+    line-height: (85 / 1920 * 100vw);
+    letter-spacing: 0%;
+}
+
+/* Календарь */
+.home .content-container .calendar {
+    margin-top: calc(48 / 1920 * 100vw);
+    border: 1px solid red;
+}

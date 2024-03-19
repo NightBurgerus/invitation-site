@@ -1,3 +1,3 @@
-const weddingDate = "10.08.2024"
+const weddingDate = "08/10/2024 12:0 AM"
 
 exports.weddingDate = weddingDate

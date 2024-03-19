@@ -1,35 +1,41 @@
 import React from "react";
 import "../css/calendar.css";
 import { weddingDate } from "../resources/constants";
+import CalendarCell from "./calendarCell";
 
 class Calendar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            calendar: this.getCalendar()
+            calendar: this.getCalendar(),
+            month: this.getMonthName()
         }
     }
-    
+
     render() {
         return (
-            <table className="calendar">
-                <tr>
-                    <td>пн</td>
-                    <td>вт</td>
-                    <td>ср</td>
-                    <td>чт</td>
-                    <td>пт</td>
-                    <td>сб</td>
-                    <td>вс</td>
-                </tr>
-                { this.state.calendar.map((row) => (
-                    <tr>
-                        { row.map((data) => (
-                            <td>{data != 0 ? data : ''}</td>
-                        ))}
+            <div className="calendar">
+                <div className="month-name">{this.state.month}</div>
+                <table >
+                    <tr className="days">
+                        <td>пн</td>
+                        <td>вт</td>
+                        <td>ср</td>
+                        <td>чт</td>
+                        <td>пт</td>
+                        <td>сб</td>
+                        <td>вс</td>
                     </tr>
-                ))}
-            </table>
+                    { this.state.calendar.map((row) => (
+                        <tr>
+                            { row.map((data) => (
+                                <CalendarCell selectedDate={data == 10} date={data} />
+                                // <td>{data != 0 ? data : ''}</td>
+                            ))}
+                        </tr>
+                    ))}
+                </table>
+            </div>
         )
     }
 
@@ -37,7 +43,7 @@ class Calendar extends React.Component {
     // Месяц берётся из constants.js
     getCalendar() {
         let calendar = [[]]
-        const [day, month, year] = weddingDate.split(".")
+        const [month, day, year] = weddingDate.split(" ")[0].split("/")
         const daysCount = new Date(year, month, 0).getDate()
         // Нулевой день – воскресенье
         const firstDay = new Date(year, month, -daysCount + 1).getDay() - 1
@@ -70,6 +76,25 @@ class Calendar extends React.Component {
         }
 
         return calendar
+    }
+
+    getMonthName() {
+        const months = [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь"
+        ]
+        const [month, day, year] = weddingDate.split(" ")[0].split("/")
+        return months[Number(month) - 1]
     }
 }
 
