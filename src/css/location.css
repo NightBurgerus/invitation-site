@@ -3,102 +3,60 @@
 	font-family: 'GillSansLightC'; 
 	src: url(/src/fonts/gillsanslightc.otf); 
 }
-body {
-    background-color: var(--green-background-color);
-}
-
 
 :root {
-    --width: 931px;
+    --width: calc(100vw * 0.48);
 }
-/* @media screen and (min-width : 800px) {
-    .main-container {
-        background-color: #fff;
-        height: 1072px;
-        border-radius: 100px;
-        width: 50%;
-        left: 20%;
-        margin: 0 auto;
-    }
-  } */
-
   @media screen and (min-width: 800px){
-    /* .main {
-        justify-content: space-between;
-        margin-right: 10%;
-    } */
-    .main-container {
-        background-color: #fff;
-        height: 1072px;
+    .location-main-container {
+        background-color: var(--white-background-color);
         border-radius: 100px;
-        width: 75%;
-        left: 20%;
-        margin: 0 auto;
-    
-    }
-    .main-container h1{
-        text-align: center;
+        margin-left: calc(240 / 1920 * 100vw);
+        margin-right: calc(239 / 1920 * 100vw);
+        margin-top: calc(122 / 1920 * 100vw);
+        padding-bottom: calc(23 / 1920 * 100vw);
         font-family: 'GillSansLightC';
+        text-align: center;
+    
+    }
+    .location-main-container h1{
+        font-size: calc(70 / 1920 * 100vw);
         font-weight: 300;
-        font-size: 70px;
-        line-height: 79.6px;
-        padding-top: 57px;
-        color: black;
+        padding-top: calc(57 / 1920 * 100vw);
     }
     
-    .main {
+    .location-children-container {
         display: flex;
-        margin: 0;
-        width: auto;
-        flex-direction: row;
-        justify-content: flex-start;
     }
-    #flower {
-        margin: 0;
-        float:left !important;
-        max-width: 100%;
-    }
+
     .address {
         text-align: right;
-        font-weight: 300;
-        margin-right: 0;
-        align-items: end;
-        gap: 19px;
-        height: auto;
-        color: black;
     }
-    h2{
-        font-size: 70px;
-        line-height: 79.6px;
-        text-align: right;
-        font-family: 'GillSansLightC';
+    .address_without_button h1{
+        font-size: calc(70 / 1920 * 100vw);
         font-weight: 300;
         margin: 0;
+        padding-top: calc(19 / 1920 * 100vw);
     }
     
     .address p{
-        font-size: 40px;
+        font-size: calc(40 / 1920 * 100vw);
+        padding-top: calc(19 / 1920 * 100vw);
         margin: 0;
     }
     
     .map_button{
-        width: 340px;
-        height: 287px;
+        width: calc(340 / 1920 * 100vw);
+        height: calc(287 / 1920 * 100vw);
         border-radius: 50px;
-        border-color: black;
-        background-color: #fff;
+        background-color: var(--white-background-color);
+        font-size: calc(40 / 1920 * 100vw);
+        color: var(--gray-text-color);
+        margin-top: calc(71 / 1920 * 100vw);
         font-family: 'GillSansLightC';
-        font-weight: 300;
-        font-size: 40px;
-        color: #797979;
-        line-height: 45.49px;
-        margin-top: 10%;
     }
-    /* .map_button:hover{
-        background-color: #797979;
-    } */
     .map_button img{
-        margin-top: 50px;
+        margin-top: calc(40 / 1920 * 100vw);
     }
 }
 @media screen and (max-width: 800px) {
@@ -116,7 +74,6 @@ body {
     }
     h1{
         text-align: center;
-        font-family: 'GillSansLightC';
         font-weight: 300;
         font-size: 25px;
         line-height: 28.43px;
@@ -159,7 +116,6 @@ body {
         font-size: 20px;
         line-height: 22.74px;
         text-align: right;
-        font-family: 'GillSansLightC';
         font-weight: 300;
         margin: 0;
     }
@@ -175,7 +131,6 @@ body {
         border-radius: 10px;
         border-color: black;
         background-color: #fff;
-        font-family: 'GillSansLightC';
         font-weight: 300;
         font-size: 15px;
         color: #797979;

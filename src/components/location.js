@@ -10,22 +10,20 @@ class Location extends React.Component {
   }
   render(){
     return (
-      <div className="main-container">
+      <div className="location-main-container">
         <h1>Место проведения</h1>
-        <div className="main">
+        <div className="location-children-container">
           <img src={Flowers} id="flower"></img>
           <div className="address">
             <div className="address_without_button">
-              <h2>Роспись:</h2>
+              <h1>Роспись:</h1>
               <p>Дворец Бракосочетания <br></br>
                 г. Владимир, ул. Растопчина, 51</p>
-              <h2>Фуршет и ресторан:</h2>
+              <h1>Фуршет и ресторан:</h1>
               <p>р-н “Полли” <br></br>
                 г. Владимир, Октябрьский пр., д. 7 </p>
             </div>
-            <div className="button">
-              <MyButton></MyButton>
-            </div>
+            <MyButton></MyButton>
           </div>
         </div>
       </div>
