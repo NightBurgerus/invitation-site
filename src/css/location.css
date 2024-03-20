@@ -1,0 +1,194 @@
+@import "./colors.css";
+@font-face {
+	font-family: 'GillSansLightC'; 
+	src: url(/src/fonts/gillsanslightc.otf); 
+}
+body {
+    background-color: var(--green-background-color);
+}
+
+
+:root {
+    --width: 931px;
+}
+/* @media screen and (min-width : 800px) {
+    .main-container {
+        background-color: #fff;
+        height: 1072px;
+        border-radius: 100px;
+        width: 50%;
+        left: 20%;
+        margin: 0 auto;
+    }
+  } */
+
+  @media screen and (min-width: 800px){
+    /* .main {
+        justify-content: space-between;
+        margin-right: 10%;
+    } */
+    .main-container {
+        background-color: #fff;
+        height: 1072px;
+        border-radius: 100px;
+        width: 75%;
+        left: 20%;
+        margin: 0 auto;
+    
+    }
+    .main-container h1{
+        text-align: center;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        font-size: 70px;
+        line-height: 79.6px;
+        padding-top: 57px;
+        color: black;
+    }
+    
+    .main {
+        display: flex;
+        margin: 0;
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #flower {
+        margin: 0;
+        float:left !important;
+        max-width: 100%;
+    }
+    .address {
+        text-align: right;
+        font-weight: 300;
+        margin-right: 0;
+        align-items: end;
+        gap: 19px;
+        height: auto;
+        color: black;
+    }
+    h2{
+        font-size: 70px;
+        line-height: 79.6px;
+        text-align: right;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    .address p{
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .map_button{
+        width: 340px;
+        height: 287px;
+        border-radius: 50px;
+        border-color: black;
+        background-color: #fff;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        font-size: 40px;
+        color: #797979;
+        line-height: 45.49px;
+        margin-top: 10%;
+    }
+    /* .map_button:hover{
+        background-color: #797979;
+    } */
+    .map_button img{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 800px) {
+    /* .main-container {
+        width: 90%;
+        height: fit-content;
+        margin: 0;
+    } */
+    .main-container {
+        background-color: #fff;
+        height: 100%;
+        border-radius: 15px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 28.43px;
+        /* padding-top: 57px; */
+        color: black;
+    }
+    
+    .main {
+        display: flex;
+        margin: 0;
+        width: auto;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    #flower {
+        margin: 0;
+        width: 69%;
+        height: 71%;
+        position: relative;
+        margin-left: -10%;
+
+    }
+    .address {
+        font-weight: 300;
+        margin-right: 0;
+        height: auto;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .address_without_button {
+        text-align: right;
+        width: 200px;
+        z-index: 1;
+        margin-left: -100px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 22.74px;
+        text-align: right;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    .address p{
+        font-size: 15px;
+        margin: 0;
+    }
+ 
+    .map_button{
+        width: 118px;
+        height: 75px;
+        border-radius: 10px;
+        border-color: black;
+        background-color: #fff;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        font-size: 15px;
+        color: #797979;
+        line-height: 17.06px;
+        margin-top: 10%;
+
+    }
+    /* .map_button:hover{
+        background-color: #797979;
+    } */
+    .map_button img{
+        position: relative;
+        width: 15%;
+        height: 10%;
+    }
+}

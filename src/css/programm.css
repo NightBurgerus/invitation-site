@@ -1,0 +1,56 @@
+@import "./colors.css";
+@font-face {
+	font-family: 'GillSansLightC'; 
+	src: url(/src/fonts/gillsanslightc.otf); 
+}
+body {
+    background-color: var(--green-background-color);
+}
+
+
+:root {
+    --width: 931px;
+}
+@media screen and (min-width: 800px){
+    .programm-main-container{
+        background-color: #fff;
+        height: 100%;
+        border-radius: 100px;
+        width: 75%;
+        left: 20%;
+        margin: 0 auto;
+
+    }
+    .programm-main-container h1{
+        text-align: center;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        font-size: 70px;
+        line-height: 79.6px;
+        padding-top: 57px;
+        color: black;
+    }
+    .children-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 5%;
+    }
+    .event, .time, .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icons img {
+        margin: 10%;
+    }
+    .event p, .time p {
+        margin: 10%;
+        font-family: 'GillSansLightC';
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 57px;
+    }
+    
+}
