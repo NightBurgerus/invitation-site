@@ -39,3 +39,40 @@
     }
  
 }
+@media screen and (max-width: 800px){
+    .wishes-main-container{
+        background-color: var(--white-background-color);
+        border-radius: 15px;
+        margin-left: calc(8 / 375 * 100vw);
+        margin-right: calc(8 / 375 * 100vw);
+        margin-top: calc(23 / 375 * 100vw);
+        display: flex;
+        justify-content: center;
+
+    }
+    .wishes-children-container {
+        width: 100%;
+        text-align: center;
+        /* margin-bottom: calc(84 / 1920 * 100vw); */
+        font-family: 'GillSansLightC';
+
+    }
+    .wishes-main-container h1{
+        font-weight: 300;
+        font-size: calc(25 / 375 * 100vw);
+    }
+    .wishes p, .dress-code p {
+        font-weight: 300;
+        font-size: calc(15 / 375 * 100vw);
+    }
+    .dress-code-colors {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: calc(22 / 375 * 100vw);
+    }
+    .dress-code-colors img {
+        max-width: 13%;
+        max-height: 13%;
+    }
+}

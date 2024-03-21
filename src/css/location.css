@@ -147,3 +147,59 @@
         height: 10%;
     }
 }
+
+
+/* MOB  */
+@media screen and (max-width: 800px){
+
+    .location-main-container {
+        background-color: var(--white-background-color);
+        border-radius: 15px;
+        margin-left: calc(8 / 375 * 100vw);
+        margin-right: calc(8 / 375 * 100vw);
+        margin-top: calc(17 / 375 * 100vw);
+        padding-bottom: calc(7 / 375 * 100vw);
+        font-family: 'GillSansLightC';
+        text-align: center;
+    
+    }
+    .location-main-container h1{
+        font-size: calc(25 / 375 * 100vw);
+        font-weight: 300;
+        padding-top: calc(16 / 375 * 100vw);
+    }
+    
+    .location-children-container {
+        display: flex;
+    }
+
+    .address {
+        text-align: right;
+    }
+    .address_without_button h1{
+        font-size: calc(20 / 375 * 100vw);
+        font-weight: 300;
+        margin: 0;
+        padding-top: calc(11 / 375 * 100vw);
+    }
+    
+    .address p{
+        font-size: calc(15 / 375 * 100vw);
+        padding-top: calc(10 / 375 * 100vw);
+        margin: 0;
+    }
+    
+    .map_button{
+        width: calc(118 / 375 * 100vw);
+        height: calc(75 / 375 * 100vw);
+        border-radius: 10px;
+        background-color: var(--white-background-color);
+        font-size: calc(15 / 375 * 100vw);
+        color: var(--gray-text-color);
+        margin-top: calc(19 / 375 * 100vw);
+        font-family: 'GillSansLightC';
+    }
+    .map_button img{
+        margin-top: calc(8 / 375 * 100vw);
+    }
+}
