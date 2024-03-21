@@ -3,54 +3,43 @@
 	font-family: 'GillSansLightC'; 
 	src: url(/src/fonts/gillsanslightc.otf); 
 }
-body {
-    background-color: var(--green-background-color);
-}
-
-
 :root {
-    --width: 931px;
+    --width: calc(100vw * 0.48);
 }
 @media screen and (min-width: 800px){
     .programm-main-container{
-        background-color: #fff;
-        height: 100%;
+        background-color: var(--white-background-color);
         border-radius: 100px;
-        width: 75%;
-        left: 20%;
-        margin: 0 auto;
-
+        margin-left: calc(240 / 1920 * 100vw);
+        margin-right: calc(239 / 1920 * 100vw);
+        font-family: 'GillSansLightC';
+        text-align: center;
     }
     .programm-main-container h1{
-        text-align: center;
-        font-family: 'GillSansLightC';
         font-weight: 300;
-        font-size: 70px;
-        line-height: 79.6px;
-        padding-top: 57px;
-        color: black;
+        padding-top: calc(72 / 1920 * 100vw);
+        font-size: calc(70 / 1920 * 100vw);
     }
     .children-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 5%;
+        justify-content: space-evenly;
     }
     .event, .time, .icons {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        
     }
     .icons img {
-        margin: 10%;
+        padding-bottom: calc(64 / 1920 * 100vw);    
     }
     .event p, .time p {
-        margin: 10%;
-        font-family: 'GillSansLightC';
+        font-size: calc(50 / 1920 * 100vw);
+        padding-bottom: calc(64 / 1920 * 100vw);    
+        margin: 0;
         font-weight: 300;
-        font-size: 50px;
-        line-height: 57px;
     }
     
 }
