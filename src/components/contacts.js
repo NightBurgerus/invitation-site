@@ -17,7 +17,7 @@ class Contacts extends React.Component {
             <div className="contacts-children-container">
                 <div className="husband">
                     <div className="husband-contact">
-                        <p>ЖЕНИХ</p>
+                        <p>ЖЕНИХ:</p>
                         <p>+7 920 999 99 99</p>
                     </div>
                     <div className="husband-picture">
@@ -25,11 +25,11 @@ class Contacts extends React.Component {
                     </div>
                 </div>
                 <div className="bride">
+                    <div className="bride-picture">
+                        <img src={Bride}></img>
+                    </div>
                     <div className="bride-contact">
-                        <div className="bride-picture">
-                            <img src={Bride}></img>
-                        </div>
-                        <p>НЕВЕСТА</p>
+                        <p>НЕВЕСТА:</p>
                         <p>+7 920 999 99 99</p>
                     </div>
                 </div>
