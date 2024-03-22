@@ -5,6 +5,7 @@ import Location from "./components/location"
 import Programm from './components/programm';
 import Wishes from './components/wishes';
 import Contacts from './components/contacts';
+import Form from './components/form';
 
 class App extends React.Component{
   render(){
@@ -13,6 +14,7 @@ class App extends React.Component{
       <Location />
       <Programm />
       <Wishes />
+      <Form />
       <Contacts />
     </div>
     )
