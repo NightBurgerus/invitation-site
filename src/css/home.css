@@ -5,7 +5,7 @@
 .home {
     border: 1px solid rgba(0, 0, 0, 0);
     position: relative;
-    
+    background-color: var(--white-background-color);
 }
 .home .flowers-img {
     width: 100vw;

@@ -1,0 +1,86 @@
+@import "./colors.css";
+@font-face {
+	font-family: 'GillSansLightC'; 
+	src: url(/src/fonts/gillsanslightc.otf); 
+}
+:root {
+    --width: calc(100vw * 0.48);
+}
+@media screen and (min-width: 800px){
+    .programm-main-container{
+        background-color: var(--white-background-color);
+        border-radius: 100px;
+        margin-left: calc(240 / 1920 * 100vw);
+        margin-right: calc(239 / 1920 * 100vw);
+        font-family: 'GillSansLightC';
+        text-align: center;
+    }
+    .programm-main-container h1{
+        font-weight: 300;
+        padding-top: calc(72 / 1920 * 100vw);
+        font-size: calc(70 / 1920 * 100vw);
+    }
+    .children-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .event, .time, .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .icons img {
+        padding-bottom: calc(64 / 1920 * 100vw);    
+    }
+    .event p, .time p {
+        font-size: calc(50 / 1920 * 100vw);
+        padding-bottom: calc(64 / 1920 * 100vw);    
+        margin: 0;
+        font-weight: 300;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .programm-main-container{
+        background-color: var(--white-background-color);
+        border-radius: 15px;
+        margin-left: calc(8 / 375 * 100vw);
+        margin-right: calc(8 / 375 * 100vw);
+        font-family: 'GillSansLightC';
+        text-align: center;
+    }
+    .programm-main-container h1{
+        font-weight: 300;
+        padding-top: calc(12 / 375 * 100vw);
+        font-size: calc(25 / 375 * 100vw);
+    }
+    .children-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .event, .time, .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+    .icons img {
+        padding-bottom: calc(25 / 375 * 100vw);    
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 40%;
+        max-height: 40%;
+    }
+    .event p, .time p {
+        font-size: calc(15 / 375 * 100vw);
+        padding-bottom: calc(50 / 375 * 100vw);    
+        margin: 0;
+        font-weight: 300;
+    }
+    
+}

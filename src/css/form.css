@@ -1,0 +1,115 @@
+@import "./colors.css";
+@font-face {
+	font-family: 'GillSansLightC'; 
+	src: url(/src/fonts/gillsanslightc.otf); 
+}
+:root {
+    --width: calc(100vw * 0.48);
+}
+@media screen and (min-width: 800px){
+    .form-main-container{
+        background-color: var(--white-background-color);
+        border-radius: 100px;
+        margin-left: calc(240 / 1920 * 100vw);
+        margin-right: calc(239 / 1920 * 100vw);
+        font-family: 'GillSansLightC';
+        text-align: center;
+    }
+    .form-main-container h1{
+        font-weight: 300;
+        padding-top: calc(56 / 1920 * 100vw);
+        font-size: calc(70 / 1920 * 100vw);
+    }
+    .form-children-container p {
+        font-size: calc(40 / 1920 * 100vw);
+        padding-bottom: calc(64 / 1920 * 100vw);    
+        margin: 0;
+        font-weight: 300;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        font-size: calc(40 / 1920 * 100vw);
+        margin-left: calc(124 / 1920 * 100vw);
+        padding-bottom: calc(122 / 1920 * 100vw);    
+    }
+    .question1, .question2, .question3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: start;
+    }
+    .question1 p, .question2 p, .question3 p {
+        margin-left: calc(130 / 1920 * 100vw);
+        padding-bottom: calc(40 / 1920 * 100vw);    
+    }
+    .question1 label, .question2 label, .question3 label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: calc(26 / 1920 * 100vw);    
+
+    }
+    .question1  input[type="radio"], .question2 input[type="radio"], .question3 input[type="radio"]{
+        vertical-align: middle;
+    }
+    input[type=radio] {
+        border: 0px;
+        width: 10%;
+        height: 61px;
+        accent-color: black;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .form-main-container{
+        background-color: var(--white-background-color);
+        border-radius: 15px;
+        margin-left: calc(8 / 375 * 100vw);
+        margin-right: calc(8 / 375 * 100vw);
+        font-family: 'GillSansLightC';
+        text-align: center;
+    }
+    .form-main-container h1{
+        font-weight: 300;
+        padding-top: calc(22 / 375 * 100vw);
+        font-size: calc(25 / 375 * 100vw);
+    }
+    .form-children-container p {
+        font-size: calc(15 / 375 * 100vw);
+        padding-bottom: calc(18 / 375 * 100vw);    
+        margin: 0;
+        font-weight: 300;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        font-size: calc(15 / 375 * 100vw);
+        margin-left: calc(37 / 375 * 100vw);
+        padding-bottom: calc(29 / 375 * 100vw);    
+    }
+    .question1, .question2, .question3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: start;
+    }
+    .question1 p, .question2 p, .question3 p {
+        margin-left: calc(35 / 375 * 100vw);
+        padding-bottom: calc(16 / 375 * 100vw);    
+    }
+    .question1 label, .question2 label, .question3 label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: calc(16 / 375 * 100vw);    
+
+    }
+    .question1  input[type="radio"], .question2 input[type="radio"], .question3 input[type="radio"]{
+        vertical-align: middle;
+    }
+    input[type=radio] {
+        border: 0px;
+        width: 10%;
+        height: 17px;
+        accent-color: black;
+    }
+}

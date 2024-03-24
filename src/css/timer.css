@@ -7,6 +7,9 @@
     font-size: calc(90 / 1920 * 100vw);
     background-color: var(--green-background-color);
     color: var(--white-text-color);
+    padding-top: calc(804 * 40 / 375 / 1920 * 100vw);
+    margin-top: calc(40 / 1920 * 100vw);
+    margin-bottom: calc(115 / 1920 * 100vw);
 }
 
 .timer-container p {
