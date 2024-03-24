@@ -91,6 +91,5 @@ class Timer extends React.Component {
     }
 }
 
-// На собрании: вопросы для экзамена (от вуза)
 
 export default Timer

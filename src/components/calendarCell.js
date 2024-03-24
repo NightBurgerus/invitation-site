@@ -7,7 +7,7 @@ const CalendarCell = (props) => {
             { props.selectedDate ?  
             <div className="div-heart-icon">
                 <iframe src={heart}></iframe>
-                <div>4</div>
+                <div>{props.date}</div>
             </div>
             :
             <div>{ props.date != 0 ? props.date : "" }</div>

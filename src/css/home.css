@@ -3,7 +3,7 @@
     padding: 0;
 }
 .home {
-    border: 1px solid blue;
+    border: 1px solid rgba(0, 0, 0, 0);
     position: relative;
     
 }
@@ -25,7 +25,6 @@
     margin-left: auto;
     margin-right: auto;
     font-family: "GillSansLightC";
-    border: 1px solid red;
 }
 
 /* Союз И */
@@ -78,5 +77,4 @@
 /* Календарь */
 .home .content-container .calendar {
     margin-top: calc(48 / 1920 * 100vw);
-    border: 1px solid red;
 }
