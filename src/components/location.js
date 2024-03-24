@@ -20,8 +20,9 @@ class Location extends React.Component {
               <p>Дворец Бракосочетания <br></br>
                 г. Владимир, ул. Растопчина, 51</p>
               <h1>Фуршет и ресторан:</h1>
-              <p>р-н “Полли” <br></br>
-                г. Владимир, Октябрьский пр., д. 7 </p>
+              <p>АМАКС Золотое кольцо<br></br>
+                ул. Чайковского, 27, Владимир
+              </p>
             </div>
             <MyButton></MyButton>
           </div>
@@ -34,7 +35,7 @@ class Location extends React.Component {
 function MyButton() {
   function handleClick() {
     var location = document.createElement('a');
-    location.href = 'https://yandex.ru/maps/org/polli/40381122075/?azimuth=5.497787143782138&ll=40.392890%2C56.129102&z=17.89';
+    location.href = 'https://yandex.ru/maps/-/CDR4MEYQ';
     location.target="_blank";
     location.click();
   }

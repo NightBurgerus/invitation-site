@@ -3,9 +3,9 @@ body {
     /* background-color: var(--green-background-color); */
 }
 
-:root {
+/* :root {
     --width: calc(100vw * 0.48);
-}
+} */
 
 .calendar * {
     margin: 0;
