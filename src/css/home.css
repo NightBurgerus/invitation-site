@@ -2,10 +2,10 @@
 	font-family: 'Caravan'; 
 	src: url(/src/fonts/Caravan.otf); 
 }
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 .home {
     border: 1px solid rgba(0, 0, 0, 0);
     position: relative;

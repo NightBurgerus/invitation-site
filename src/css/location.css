@@ -28,16 +28,18 @@
     
     .location-children-container {
         display: flex;
+        justify-content: space-between;
+        margin-right: calc(122 / 1920 * 100vw);
     }
 
     .address {
-        text-align: right;
+        text-align: right;    
     }
     .address_without_button h1{
         font-size: calc(70 / 1920 * 100vw);
         font-weight: 300;
-        margin: 0;
         padding-top: calc(19 / 1920 * 100vw);
+        margin: 0;
     }
     
     .address p{
