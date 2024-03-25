@@ -47,7 +47,6 @@ function Formmm() {
                     <label><input type="radio" name="drink" value="2" onChange={handleChange} checked={formData.drink==="2"}/>Белое вино</label>
                     <label><input type="radio" name="drink" value="3" onChange={handleChange} checked={formData.drink==="3"}/>Красное вино</label>
                     <label><input type="radio" name="drink" value="4" onChange={handleChange} checked={formData.drink==="4"}/>Водка</label>
-                    <label><input type="radio" name="drink" value="5" onChange={handleChange} checked={formData.drink==="5"}/>Виски</label>
                     <label><input type="radio" name="drink" value="6" onChange={handleChange} checked={formData.drink==="6"}/>Коньяк</label>
                     <label><input type="radio" name="drink" value="7" onChange={handleChange} checked={formData.drink==="7"}/>Безалкогольные напитки</label>
                 </div>
