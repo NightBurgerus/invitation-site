@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Caravan'; 
+	src: url(/src/fonts/Caravan.otf); 
+}
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +29,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: "GillSansLightC";
+    text-align: center;
 }
 
 /* Союз И */

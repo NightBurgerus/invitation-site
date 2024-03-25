@@ -3,9 +3,9 @@ body {
     /* background-color: var(--green-background-color); */
 }
 
-/* :root {
+:root {
     --width: calc(100vw * 0.48);
-} */
+}
 
 .calendar * {
     margin: 0;
@@ -21,6 +21,7 @@ body {
     font-size: calc(60 / 1920 * 100vw);
     font-weight: 300;
     letter-spacing: 0%;
+    padding-bottom: calc(55 / 1920 * 100vw);
 }
 
 .calendar .days{
