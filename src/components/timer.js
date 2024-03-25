@@ -22,7 +22,7 @@ class Timer extends React.Component {
     render() {
         return (
             <div className="timer-container">
-                <p>Будем счастливы<br /> разделить с вами <br />этот день <br />через...</p>
+                <p>Будем счастливы<br /> разделить с вами <br />этот день <br /><br></br>через...</p>
                 <div className="timer">
                     <div className="timer-numbers">
                         <p>{this.state.counts[0]}</p>
