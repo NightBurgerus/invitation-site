@@ -18,7 +18,7 @@ class Contacts extends React.Component {
                 <div className="husband">
                     <div className="husband-contact">
                         <p>ЖЕНИХ:</p>
-                        <p>+7 920 999 99 99</p>
+                        <p>+7 910 183 03 68</p>
                     </div>
                     <div className="husband-picture">
                         <img src={Husband}></img>
@@ -30,7 +30,7 @@ class Contacts extends React.Component {
                     </div>
                     <div className="bride-contact">
                         <p>НЕВЕСТА:</p>
-                        <p>+7 920 999 99 99</p>
+                        <p>+7 910 097 78 47</p>
                     </div>
                 </div>
             </div>
