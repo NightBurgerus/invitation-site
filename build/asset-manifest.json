@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/invitation-site/static/css/main.a1cc3d87.css",
+    "main.js": "/invitation-site/static/js/main.64672b6f.js",
+    "static/media/flowers-start.png": "/invitation-site/static/media/flowers-start.5a9bf9fed2cd9c3ff0f1.png",
+    "static/media/flowers-place.png": "/invitation-site/static/media/flowers-place.263a50be062a4705986b.png",
+    "static/media/husband.png": "/invitation-site/static/media/husband.1b76a975967a7f5605fd.png",
+    "static/media/bride.png": "/invitation-site/static/media/bride.b5d270702073549f8dc2.png",
+    "static/media/Ellipse 16.png": "/invitation-site/static/media/Ellipse 16.1baa0c180409dbb1672e.png",
+    "static/media/Caravan.otf": "/invitation-site/static/media/Caravan.172c9c63008627fda2b6.otf",
+    "static/media/gillsanslightc.otf": "/invitation-site/static/media/gillsanslightc.1be3b674435b59d96325.otf",
+    "static/media/heart.svg": "/invitation-site/static/media/heart.846546b209581b94e42a1f7f02ca1cba.svg",
+    "index.html": "/invitation-site/index.html",
+    "main.a1cc3d87.css.map": "/invitation-site/static/css/main.a1cc3d87.css.map",
+    "main.64672b6f.js.map": "/invitation-site/static/js/main.64672b6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1cc3d87.css",
+    "static/js/main.64672b6f.js"
+  ]
+}
