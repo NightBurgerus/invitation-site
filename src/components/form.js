@@ -16,6 +16,8 @@ class Form extends React.Component {
             </div>
             <FIO></FIO>
             <Formmm></Formmm>
+            <Preferences></Preferences>
+            <Music></Music>
         </div>
     )
   }
@@ -78,5 +80,41 @@ function Formmm() {
         </form>
     )
  }
+
+
+ function  Preferences()  {
+	const  [inputValue, setInputValue] =  useState('');
+
+	const  handleChange = (event) => {
+		setInputValue(event.target.value);
+	};
+
+return  (
+        <form>
+            <div className="preferences">
+                <label>Что вы не едите / Есть ли аллергия на какие-нибудь продукты?<br></br>
+                <input  type="text"  value={inputValue} onChange={handleChange} />
+                </label>
+            </div>
+        </form>
+)};
+
+function  Music()  {
+	const  [inputValue, setInputValue] =  useState('');
+
+	const  handleChange = (event) => {
+		setInputValue(event.target.value);
+	};
+
+return  (
+        <form>
+            <div className="music">
+                <label>Ваши пожелания по музыке:<br></br>
+                <input  type="text"  value={inputValue} onChange={handleChange} />
+                </label>
+            </div>
+        </form>
+)};
+
 
 export default Form
