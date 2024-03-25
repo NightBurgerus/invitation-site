@@ -14,11 +14,30 @@ class Form extends React.Component {
                 <p>Пожалуйста, ответьте на несколько<br></br>
                 вопросов, которые мы для вас приготовили</p>
             </div>
+            <FIO></FIO>
             <Formmm></Formmm>
         </div>
     )
   }
 }
+
+function  FIO()  {
+	const  [inputValue, setInputValue] =  useState('');
+
+	const  handleChange = (event) => {
+		setInputValue(event.target.value);
+	};
+
+return  (
+        <form>
+            <div className="fio">
+                <label>Ваши ФИО<br></br>
+                <input  type="text"  value={inputValue} onChange={handleChange} />
+                </label>
+            </div>
+        </form>
+)};
+
 
 
 function Formmm() {
