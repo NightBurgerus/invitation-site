@@ -34,10 +34,29 @@
 
 /* Союз И */
 .home .content-container div.and {
-    margin-top: -7vw;
+    margin-top: -4vw;
     margin-left: calc(1000 / 1920 * 100vw);
     font-size: calc(160 / 1920 * 100vw);
     letter-spacing: 0;
+}
+.welcome:nth-child(2) {
+    margin-top: 15vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 3s linear, visibility 3s linear, margin 3s linear;
+    animation: fadein 2s;
+    animation-delay: 0s;
+}
+@keyframes fadein {
+    from { opacity: 0;
+    margin-top: 15vw; }
+    to   { opacity: 1; 
+    margin-top: -4vw;}
+}
+.welcome:nth-child(2) {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -4vw;
 }
 
 /* Имена */
@@ -51,10 +70,25 @@
 
 /* Алексей */
 .home .content-container .welcome.name:first-child {
-    margin-top: 15vw;
+    margin-top: 30vw;
     margin-left: calc(490 / 1920 * 100vw);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 3s linear, visibility 3s linear, margin 3s linear;
+    animation: al 2s;
+    animation-delay: 0s;
 }
-
+@keyframes al {
+    from { opacity: 0;
+    margin-top: 30vw; }
+    to   { opacity: 1; 
+    margin-top: 15vw;}
+}
+.home .content-container .welcome.name:first-child {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 15vw;
+}
 
 /* Варвара */
 .home .content-container .welcome:nth-child(3) {
