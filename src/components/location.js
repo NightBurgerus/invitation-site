@@ -42,7 +42,9 @@ function MyButton() {
   return <button className="map_button" type="button" onClick={handleClick}>
     Посмотреть <br></br>
     на карте <br></br>
+    <div className="image">
     <img src={Vector}></img>
+    </div>
     </button>
 }
 
